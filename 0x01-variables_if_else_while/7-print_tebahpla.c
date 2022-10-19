@@ -1,20 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point for writing entire lowercase alphabet in reverse
+ * main - print the latterss of the alphabet
+ *
+ * Description: print the letters of the alphabet in reverse
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char character;
+	int i = 122;
 
-	for (character = 'z' ; character >= 'a' ; character--)
+	while (i > 96)
 	{
-		putchar(character);
+		putchar(i);
+		i--;
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }

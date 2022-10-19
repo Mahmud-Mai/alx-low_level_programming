@@ -1,47 +1,27 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * jack_bauer - print jack bauer's day
+ * jack_bauer - prints time
  *
- * Return: Void.
+ * Description: prints a list of time
+ * Return: Always 0.
  */
 
 void jack_bauer(void)
 {
-	int hour1, hour2, minute1, minute2;
+	int i, j;
 
-	for (hour1 = 0; hour1 <= 2; hour1++)
+	for (i = 0; i < 24; i++)
 	{
-		if (hour1 == 2 && hour2 == 4)
+		for (j = 0; j < 60; j++)
 		{
-			break;
-		}
-
-		for (hour2 = 0; hour2 < 10; hour2++)
-		{
-			if (hour1 == 2 && hour2 == 4)
-			{
-				break;
-			}
-			for (minute1 = 0; minute1 < 6; minute1++)
-			{
-				if (hour1 == 2 && hour2 == 4)
-				{
-					break;
-				}
-				for (minute2 = 0; minute2 < 10; minute2++)
-				{
-					if (hour1 == 2 && hour2 == 4)
-					{
-						break;
-					}
-					_putchar(hour1 + '0');
-					_putchar(hour2 + '0');
-					_putchar(':');
-					_putchar(minute1 + '0');
-					_putchar(minute2 + '0');
-					_putchar('\n');
-				}
-			}
+			_putchar(i / 10 + 48);
+			_putchar(i % 10 + 48);
+			_putchar(':');
+			_putchar(j / 10 + 48);
+			_putchar(j % 10 + 48);
+			_putchar('\n');
 		}
 	}
 }
+

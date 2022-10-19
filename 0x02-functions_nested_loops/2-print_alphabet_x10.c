@@ -1,21 +1,26 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * print_alphabet_x10 - print entire alphabet on 10 lines
+ * print_alphabet_x10 - prints alphabets 10
  *
- * Return: Void.
+ * Description: prints 10 times
+ * Return: Always(0).
  */
 
 void print_alphabet_x10(void)
 {
-	int line_count;
-	char character;
+	int alphabet_count = 0;
 
-	for (line_count = 0; line_count < 10; line_count++)
+	while (alphabet_count < 10)
 	{
-	for (character = 'a'; character <= 'z'; character++)
-	{
-		_putchar(character);
-	}
-	_putchar('\n');
+		char ch = 'a';
+
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		alphabet_count++;
+		_putchar('\n');
 	}
 }

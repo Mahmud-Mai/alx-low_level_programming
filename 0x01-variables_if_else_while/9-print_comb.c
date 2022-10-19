@@ -1,25 +1,31 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point for writing entire base10 single digits
+ * main - print single digit numbers
+ *
+ * Description: print single digit numbers with commas
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int integer;
+	int i;
 
-	for (integer = 0 ; integer <= 9 ; integer++)
+	i = 48;
+
+	while (i < 58)
 	{
-		putchar(integer + '0');
-		if (integer != 9)
+		putchar(i);
+		if (i != 57)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
 		}
+		i++;
 	}
-	putchar('\n');
+
+	putchar(10);
+
 	return (0);
 }

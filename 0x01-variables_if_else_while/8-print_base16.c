@@ -1,24 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point for writing entire base16 numeric set
+ * main - print the letters of the alphabet
  *
- * Return: Always 0 (Success)
+ * Description: print the letters of the alphabet except e, q
+ *
+ * Return: lways 0 (Success)
  */
+
 int main(void)
 {
-	char character;
+	int i = 0;
 
-	for (character = '0' ; character <= '9' ; character++)
+	while (i < 48)
 	{
-		putchar(character);
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i - 10 + 'A');
+		i++;
 	}
-	for (character = 'a' ; character <= 'f' ; character++)
-	{
-		putchar(character);
-	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }

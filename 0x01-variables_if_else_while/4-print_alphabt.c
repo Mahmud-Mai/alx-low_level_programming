@@ -1,23 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point for writing entire lowercase alphabet except q and e
+ * main - print the letters of the alphabet
+ *
+ * Description: print the letters of the alphabet except e, q
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	int character;
 
-	for (character = 'a' ; character <= 'z' ; character++)
+int main(void)
+{ int i = 97;
+
+	while (i < 123)
 	{
-		if (character != 'q' && character != 'e')
+		if (i != 101 && i != 113)
 		{
-			putchar(character);
+			putchar(i);
 		}
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }

@@ -1,20 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point for writing entire lowercase alphabet
+ * main - print the letters of the alphabet
+ *
+ * Description: print the letters of the alphabet
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char character;
+	int i = 97;
 
-	for (character = 'a' ; character <= 'z' ; character++)
+	while (i < 123)
 	{
-		putchar(character);
+		putchar(i);
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }

@@ -1,18 +1,19 @@
-#include "holberton.h"
-#include "string.h"
+#include "main.h"
+
 /**
- * print_alphabet - print entire alphabet
+ * print_alphabet - print alphabet of letters
  *
- * Return: Void.
+ * Return: void
  */
 
 void print_alphabet(void)
 {
-	char character;
+	int i;
 
-	for (character = 'a' ; character <= 'z' ; character++)
+	for (i = 'a'; i <= 'z'; i++)
+
 	{
-		_putchar(character);
+		_putchar(i);
 	}
 	_putchar('\n');
 }
